@@ -1,0 +1,17 @@
+def swapData(path1,path2):
+    f=open(path1)
+    data=f.read()
+    f.close()
+    f=open(path2)
+    data2=f.read()
+    f.close()
+    f=open(path1,'w')
+    f.write(data2)
+    f.close()
+    f=open(path2,'w')
+    f.write(data)
+    f.close()
+
+inpt1=input('enter file path: ')
+inpt2=input('enter second file path: ')
+swapData(inpt1,inpt2)
